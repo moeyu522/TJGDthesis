@@ -23,5 +23,8 @@ Copyright 2021 Liwei-522Moeyu
 https://wwe.lanzous.com/b010ayxaj
 地址访问密码: TJGD
 压缩包解压密码：TJGD  
-Gitee：
-https://gitee.com/moeyu522/TJGDthesis  
+
+不再提供Gitee仓库链接
+
+本项目GitHub地址：
+https://github.com/moeyu522/TJGDthesis
