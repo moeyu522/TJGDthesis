@@ -209,6 +209,8 @@
 \renewcommand {\thetable} {\shuzithesection{}-\arabic{table}\quad}
 \renewcommand {\thefigure} {\shuzithesection{}-\arabic{figure}\quad}
 \captionsetup{labelformat=default,labelsep=space}
+%v1.3add 重新定义公式的编号方式
+\renewcommand {\theequation} {\shuzithesection{}-\arabic{equation}\quad}
 %对正文中的标题样式定义
 \titleformat{\section}{\zihao{-3}\centering\heiti}{{第\,\thesection\,章}}{2em}{}
 \titleformat{\subsection}{\zihao{4}\raggedright\heiti}{\thesubsection}{1em}{}
