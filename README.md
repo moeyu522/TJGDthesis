@@ -1,7 +1,7 @@
 ***
 # TJGDthesis:天津工业大学本科生毕业论文模板 非官方  
 Copyright 2021 Liwei-522Moeyu  
-2021/03/18 v1.2 beta  
+2021/04/20 v1.3 beta  
 
 **重要提示：**  
 1. LaTex模板参考2020 Qiu Renxiang-中国人民大学本科生毕业论文模板 
@@ -11,10 +11,10 @@ Copyright 2021 Liwei-522Moeyu
 5. LaTex模板修改、使用、发布本文档请务必遵循 LaTeX Project Public License  
 6. 请删除不必要的注释  
 7. LaTex模板请切换默认文献工具为biber  
-8. 参与修订请联系：moeyu522@qq.com 或参与Gitee Issues
-9. 文件结构：  
+8. 参与修订请联系：moeyu522@qq.com 或参与GitHub Issues
+9. 文件夹结构：  
     TJGDthesis  
-        ---- bib[文献存放]  
+        ---- bib[文献存放，内含后缀为.bib文件]  
         ---- image[图片存放]  
         ---- TJGDthesis.docx[可单独使用]  
         -----TJGDthesis.tex  
@@ -28,3 +28,11 @@ https://wwe.lanzous.com/b010ayxaj
 
 本项目GitHub地址：
 https://github.com/moeyu522/TJGDthesis
+
+**致谢**  
+感谢室友波提出的整改意见，感谢室友豪，室友毛在本人完成模板期间的带饭，阿里嘎多。
+
+**update log**  
+- 2021/04/20  v1.3  删除latex模板中摘要页页脚，docx文档版本与latex模板同一为v1.3，docx模板修改些许细节问题  
+- 2021/03/18  v1.2  添加docx文档  
+- v1.1  初始化tex文档 
