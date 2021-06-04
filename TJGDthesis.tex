@@ -1,7 +1,7 @@
 %*********************************************************************
-%TJGDthesis:天津工业大学本科生毕业论文模板 非官方
+%TJGDthesis:天津工业大学本科生毕业论文Latex排版示例 非官方
 %Copyright 2021 Liwei-522Moeyu  
-%2021/04/20 v1.3 beta  
+%2021/04/20 v1.3.1 beta  
 %
 %**重要提示：**  
 %		1. LaTex模板参考2020 Qiu Renxiang-中国人民大学本科生毕业论文模板 
@@ -14,6 +14,7 @@
 %		8. 参与修订请联系：moeyu522@qq.com 或参与GitHub Issues
 %		9. 文件结构：  
 %		    TJGDthesis  
+%		---- doc[相关规定说明文件] 
 %		---- bib[文献存放，内含后缀为.bib文件]  
 %		---- image[图片存放]  
 %		---- TJGDthesis.docx[可单独使用]  
@@ -32,6 +33,7 @@
 %感谢室友波提出的整改意见，感谢室友豪，室友毛在本人完成模板期间的带饭，阿里嘎多。
 %
 %**update log**  
+%- 2021/6/5 v1.3.1 将名称改为Latex排版示例，添加相关的官方说明，其中2018版为计算机学院广泛采用的排版，修改页边距，添加附录章节，封面增加学号，除封面外，其他部分与2018版本不一致
 %- 2021/04/20 v1.3  删除latex模板中摘要页页脚，docx文档版本与latex模板同一为v1.3，docx模板修改些许细节问题  
 %- 2021/03/18  v1.2  添加docx文档  
 %- v1.1  初始化tex文档 
@@ -74,14 +76,7 @@
 %全文默认行间距Word版本的1.25倍
 \linespread{1.04}
 
-%本科学生毕业论文要求纵向打印，页边距的要求为：
-%上（T）：2 cm
-%下（B）：2 cm
-% 左（L）：1.5 cm
-% 右（R）：1.5 cm
-% 装订线（T）：0.5 cm
-% 装订线位置（T）：左
-\geometry{a4paper,left = 2cm,right = 1.5cm,top = 2cm,bottom= 2cm}
+\geometry{a4paper,left = 3.18cm,right = 3.18cm,top = 2.54cm,bottom= 2.54cm}
 
 %目录和引用超链接
 \hypersetup{
@@ -108,26 +103,26 @@
 	
 	\vspace{3mm}
 	
-	\zihao{1}{\heiti\bold{\quad 毕业设计（论文）}}
+	\zihao{2}{\songti{本科生毕业设计（论文）}}
 	
 	\vspace{12mm}
-	\zihao{3} \bold{论文题目}
+	\zihao{3} \bold{题目：}{论文的题目}
 	
-	\vspace{80mm}
-
+	\vspace{60mm}
+	
+	\zihao{3}{\bold{学\qquad 号：\uline{\makebox[78mm][c]{5201314}}}}
+	
 	\zihao{3}{\bold{姓\qquad 名：\uline{\makebox[78mm][c]{李伟}}}}
-	
-	\zihao{3}{\bold{学\qquad 院：\uline{\makebox[78mm][c]{计算机科学与软件学院}}}}
 	
 	\zihao{3}{\bold{专\qquad 业：\uline{\makebox[78mm][c]{xxxxx}}}}
 	
-	\zihao{3}{\bold{指导老师：\uline{\makebox[78mm][c]{xxxxx}}}}
+	\zihao{3}{\bold{学\qquad 院：\uline{\makebox[78mm][c]{计算机科学与软件学院}}}}
+	
+	\zihao{3}{\bold{指导教师：\uline{\makebox[78mm][c]{xxxxx}}}}
 	
 	\zihao{3}{\bold{职\qquad 称：\uline{\makebox[78mm][c]{xxxx}}}}
 	
-	\vspace{32mm}
-	
-	\zihao{3}{\bold{xxx年xxx月xxx日}}
+	\zihao{3}{\bold{完成日期：\uline{\makebox[78mm][c]{xxx年xxx月xxx日}}}}
 	
 \end{titlepage}
 
@@ -227,6 +222,7 @@
 	基于研究得出的结论，本文从现实中存在的个性化推荐精度不足、信息窄化以及个人信息的侵害等方面的问题出发，提出了对于未来个性化推荐优化的展望。在算法方面，通过使用深度学习与知识图谱等前沿技术与算法提高个性化推荐的精确程度。在个人信息使用与信息窄化的问题上，平台可以增加相应调节选项，提高用户的自主选择性。其次，也可以通过提高推荐过程的可解释性来增强用户对推荐系统的信任度与满意度。另外，还需要政府部门完善个人信息保护的法律法规、社会舆论与公共部门发挥监督与监管作用，以及企业上下游齐发力，共同降低个人隐私泄露的风险。
 	\subsection{复杂神经网络同步的研究背景}
 	图片引用实例，图片引用实例，图片引用实例，图片引用实例，图片引用实例，图片引用实例，图片引用实例，图片引用实例，如图\ref{fig:1-1}。
+	%请确保图片的begin-end环境里的语句完整且顺序不变，这破玩意还如css编译快
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale = .5]{./image/test.jpg}
@@ -331,9 +327,15 @@
 
 %v1.3add 修改 /end
 
+%附录
+\newpage
+\section*{\centerline{附\qquad 录}}
+\addcontentsline{toc}{section}{附录}
+
+
 %致谢
 \newpage
-\section*{致谢}
+\section*{\centerline{致\qquad 谢}}
 \addcontentsline{toc}{section}{致谢}
 我从进入大学到毕业整整四年。在这四年中，我过得浑浑愕额。四年前，我身高170cm，四年后，我身高还是170cm；四年前，我体重60kg，四年后，我体重还是60kg；四年前，我一无所有，四年后，我还是一无所有。四年前，我眼睛明亮、有神，四年后，摘掉眼镜，我已看不清自己有多少个手指了；四年前，我声音洪亮、清澈，四年后，已经是慢性咽喉炎，声音嘶哑；四年前，我踌躇满志、指点江山、激扬文字，四年后，我心如止水，只求温饱；当然，我也得到了一些东西。四年前，我还是个农民的儿子，四年后，我成为了一个博士；四年前，我只懂得砍柴、种田、割草、放牛，四年后，我已经成为了一个懂机械、金融、管理的复合型人才；但如果您问我这四年最大的长进是什么，我将告诉您：四年前，我四七，四年后，我二四七。
 
