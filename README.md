@@ -21,7 +21,9 @@ Copyright 2021 Liwei-522Moeyu
         -----TJGDthesis.tex  
 ***
 蓝奏云链接：  
-https://wwe.lanzous.com/b010ayxaj
+https://wwe.lanzous.com/b010ayxaj  
+如果上述地址无法访问：请访问以下地址：
+https://wwe.lanzoui.com/b010ayxaj  
 地址访问密码: TJGD
 压缩包解压密码：TJGD  
 
