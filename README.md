@@ -14,7 +14,7 @@ Copyright 2021 Liwei-522Moeyu
 8. 参与修订请联系：moeyu522@qq.com 或参与GitHub Issues
 9. 文件夹结构：  
     TJGDthesis  
-        ---- doc[相关规定说明文件] 
+        ---- doc[相关规定说明文件]  
         ---- bib[文献存放，内含后缀为.bib文件]  
         ---- image[图片存放]  
         ---- TJGDthesis.docx[可单独使用]  
